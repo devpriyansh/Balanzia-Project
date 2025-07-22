@@ -45,15 +45,15 @@ let loginUser = async (req, res) => {
       return res.status(400).json({ error: "Incorrect Password" });
     }
 
-    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-      expiresIn: "1d",
-    });
+    // const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+    //   expiresIn: "1d",
+    // });
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "Lax",
-    });
+    // res.cookie("token", token, {
+    //   httpOnly: true,
+    //   secure: process.env.NODE_ENV === "production",
+    //   sameSite: "Lax",
+    // });
 
     res
       .status(200)

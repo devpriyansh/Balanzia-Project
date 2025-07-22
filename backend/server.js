@@ -10,7 +10,7 @@ dotenv.config();
 app.use(
   cors({
     // origin: "http://localhost:5173", // frontend url
-    origin: "https://balanzia.vercel.app",
+    origin: "https://balanzia-project.vercel.app",
 
     credentials: true, //for cookie
   })

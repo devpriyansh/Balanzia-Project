@@ -20,7 +20,7 @@ function ShowSupplierStatement() {
     getStatements();
   }, []);
   return (
-    <div className="max-w-[90%] mx-auto p-6 bg-white shadow-lg rounded-lg mt-10l">
+    <div className="max-w-[90%] mx-auto p-6 bg-white shadow-lg rounded-lg mt-10l min-h-screen">
       <h1 className="text-2xl font-bold mb-4 text-center">
         {statements.supplierName} Supplier Statement
       </h1>
